@@ -1,0 +1,123 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+# **but __NOT__ in front matter!!**
+
+remote_theme: "mmistakes/minimal-mistakes@4.14.1"
+title: Java Gems
+url: https://iha92.github.io
+name: Java Gems
+##  > # this means to ignore newlines until "baseurl:"
+description: Just another Jekyll site
+baseurl: "/"
+show_downloads: false
+
+twitter_username: iha92twitter_username
+github_username: iha92_github_username
+linkedin_username: iha92_linkedin_username
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# unused-theme: jekyll-theme-time-machine ## bug in post title uses site title
+# pretty plain! theme: jekyll-theme-slate
+# Too Minimal!! theme: jekyll-theme-minimal
+# unused-theme: jekyll-theme-minimal
+# unused-theme: jekyll-theme-primer
+# unused-theme: minima
+# unused-theme: jekyll-theme-tactile
+# unused-theme: jekyll-theme-cayman
+# unused-theme: jekyll-theme-modernist
+# unused-theme: jekyll-theme-leap-day
+# unused-remote_theme: daattali/beautiful-jekyll # Unsupported as a remote_theme
+
+#
+# minimal-mistakes customizations
+#
+minimal_mistakes_skin: "air"
+title_separator: "|"
+breadcrumbs: true
+paginate: 10
+paginate_path: /page:num/
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: true
+      related: true
+author:
+   name: "Iha bansal"
+   avatar: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Freeman_%26_Colley-Lee_crop.jpg/249px-Freeman_%26_Colley-Lee_crop.jpg"
+   bio: "Placeholder bio!!"
+   links:
+     - label: "GitHub"
+       icon:  "fab fa-fw fa-github"
+       url:   "https://github.com/iha92"
+     - label: "My Resume"
+       icon:  "fas fa-file-pdf"
+       url:   "https://github.com/iha92"
+     - label: "LinkedIn"
+       icon:  "fab fa-linkedin"
+       url:   "https://www.linkedin.com/in/iha"
+repository: iha92/iha92.github.io
+twitter:
+   username: &twitter iha92
+linkedin:
+   username: iha92
+analytics:
+   provider: false
+   google:
+     tracking_id:
+     anonymize_ip:
+#
+# END minimal-mistakes customizations
+#
+
+repository: iha92/iha92.github.io
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap # minimal-mistakes
+  - jekyll-include-cache # minimal-mistakes
+  - jekyll-paginate # minimal-mistakes
+  - jekyll-gist # minimal-mistakes
+  - jekyll-remote-theme
+
+whitelist: 
+  - jekyll-feed
+  - jekyll-sitemap # minimal-mistakes
+  - jekyll-include-cache # minimal-mistakes
+  - jekyll-paginate # minimal-mistakes
+  - jekyll-gist # minimal-mistakes
+  - jekyll-remote-theme
+  
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+        
+# minimal-mistakes customizations
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# END minimal-mistakes customizations
+
+# Should this be :year-:title? /:year/:month/:title? /:year/:title? /:title?
+permalink: /:categories/:year-:title/
