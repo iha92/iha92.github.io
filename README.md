@@ -3,9 +3,11 @@
 ## CONTRIBUTE
 ### 1. Run locally
 ```
+$ sudo apt-get install ruby-full libz-dev
+$ sudo gem install bundler
 $ git clone https://github.com/iha92/iha92.github.io.git
 $ cd iha92.github.io
-$ bundle
+$ bundle install
 $ bundle exec jekyll serve      # Serve at http://127.0.0.1:4000
 ```
 ### 2. Theme help
