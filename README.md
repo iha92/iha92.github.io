@@ -14,8 +14,9 @@ $ bundle exec jekyll serve      # Serve at http://127.0.0.1:4000
 Minimal Mistakes Jekyll theme is used - [homepage](https://mmistakes.github.io/minimal-mistakes/), [repo](https://github.com/mmistakes/minimal-mistakes).
 
 ## TODO
-- [ ] create lots of posts, trying all includes, layouts etc
-- [ ] create lots of options for archive, search, homepage, about
+- [ ] decide on post layout
+- [ ] get tags working
+- [ ] get search working?
+- [ ] make homepage
 - [ ] theme everything
-- [ ] Prose/ siteleaf
-- [ ] balance prose and template
+- [ ] forestry.io
