@@ -20,3 +20,5 @@ Minimal Mistakes Jekyll theme is used - [homepage](https://mmistakes.github.io/m
 - [ ] make homepage
 - [ ] theme everything
 - [ ] forestry.io
+- [ ] fallback teaser image, logo in config
+- [ ] compare with mmistakes website \_config and do production related steps like google_site_verification, comments, search etc
